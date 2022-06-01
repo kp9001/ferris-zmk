@@ -22,45 +22,32 @@
 };
 
 / {
+
     combos {
         compatible = "zmk,combos";
+
         combo_steno {
             timeout-ms = <50>;
             key-positions = <0 4>;
             layers = <0 1>;
             bindings = <&tog STENO>;
         };
-    };
-};
 
-/ {
-    combos {
-        compatible = "zmk,combos";
         combo_colemak {
             timeout-ms = <50>;
             key-positions = <0 30 3>;
             layers = <0 1 2 3 4>;
             bindings = <&to COLEMAK>;
         };
-    };
-};
 
-/ {
-    combos {
-        compatible = "zmk,combos";
         combo_qwerty {
             timeout-ms = <50>;
             key-positions = <0 30 2>;
             layers = <0 1 2 3 4>;
             bindings = <&to QWERTY>;
         };
-    };
-};
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_qwerty {
+        combo_game {
             timeout-ms = <50>;
             key-positions = <0 30 1>;
             layers = <0 1 2 3 4>;
