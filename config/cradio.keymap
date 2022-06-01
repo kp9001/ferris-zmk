@@ -79,7 +79,7 @@
        		GAME {
 		bindings = <
 		&mo NAV Q  &mt LCTRL W &kp E &mt LSHIFT R &kp T		                &kp Y   &kp U &kp I    &kp O   &kp P 
-		&mt LAFT A &kp S       &kp D &kp F        &kp G 	                &kp H   &kp J &kp K    &kp L   &kp QUOT 
+		&mt LALT A &kp S       &kp D &kp F        &kp G 	                &kp H   &kp J &kp K    &kp L   &kp QUOT 
 		&mo NAV Z  &kp X       &kp C &kp V        &kp B 	                &kp N   &kp M &kp CMMA &kp DOT &kp DEL 
 					     &kp SPACE    &trans  			&trans  &trans 
 		>;
