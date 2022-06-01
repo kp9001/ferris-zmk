@@ -88,9 +88,9 @@
 		SYMBOLS {
 		bindings = <
 		&kp N1        &kp N2         &kp N3       &kp N4         &kp N5  	&kp N6    &kp N7      &kp N8    &kp N9   &kp N0 
-		&mt LALT ESC  &mt LCTRL BSPC &mt LGUI TAB &mt LSHIFT DEL &to NAV 	&kp BSPC  &kp PG_DOWN &kp PG_UP &kp DEL  &kp SEMI
+		&mt LALT ESC  &mt LCTRL BSPC &mt LGUI TAB &mt LSHIFT DEL &none 	        &kp BSPC  &kp PG_DN   &kp PG_UP &kp DEL  &kp SEMI
 		&mo NAV GRAVE &kp BSLH       &kp PIPE     &kp UNDER      &kp TILDE    	&kp EQUAL &kp MINUS   &kp PLUS  &kp LBKT &kp RBKT
-					                  &none          &kp RET  	&trans   &trans 
+					                  &none          &kp RET  	&trans    &trans 
 		>;
 		};	
 		
