@@ -63,7 +63,7 @@
 		&lt NAV Q  &kp W       &kp F      &kp P        &kp B 			&kp J   &kp L        &kp U      &kp Y       &kp QUOT 
 		&mt LALT A &mt LCTRL R &mt LGUI S &mt LSHIFT T &kp G 	               	&kp H   &mt RSHIFT N &mt RGUI E &mt RCTRL I &mt RALT O
 		&lt NAV Z  &kp X       &kp C      &kp D        &kp V		       	&kp K   &kp M        &kp CMMA   &kp DOT     &lt NAV SLASH
-          				          &sl SYMBOLS  &mt SYMBOLS TAB		&kp RET &kp SPACE 
+          				          &sl SYMBOLS  &lt SYMBOLS TAB		&kp RET &kp SPACE 
 		>;
 		};
 
