@@ -54,9 +54,6 @@
             bindings = <&to GAME>;
         };
     };
-};
-
-/ { 
 
         keymap {
                 compatible = "zmk,keymap";
