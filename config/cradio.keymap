@@ -38,6 +38,20 @@
             layers = <0 1 2 3 4>;
             bindings = <&tog GAME>;
         };
+
+	combo_esc {
+		timeout-ms = <50>;
+		key-positions = <30 10>;
+		layers = <0 1 2 3 4>;
+		bindings = <&kp ESC>;
+	};
+
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <30 12>;
+            layers = <0 1 2 3 4>;
+            bindings = <&kp TAB>;
+        };
     };
 
         keymap {
