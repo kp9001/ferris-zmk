@@ -9,10 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWERTY   0
-#define GAME     1
-#define SYMBOLS  2
-#define NAV      3
-#define STENO    4
+#define COLEMAK  1
+#define GAME     2
+#define SYMBOLS  3
+#define NAV      4
+#define STENO    5
 
 &mt {
    // flavor = "tap-preferred";
@@ -33,29 +34,43 @@
 
         combo_game {
             timeout-ms = <50>;
-            key-positions = <10 30 4>;
-            layers = <0 1 2 3>;
-            bindings = <&tog GAME>;
+            key-positions = <0 3 4>;
+            layers = <0 1 2 3 4>;
+            bindings = <&to GAME>;
+        };
+
+        combo_qwerty {
+            timeout-ms = <50>;
+            key-positions = <0 1 4>;
+            layers = <0 1 2 3 4>;
+            bindings = <&to QWERTY>;
+        };
+
+        combo_colemak {
+            timeout-ms = <50>;
+            key-positions = <0 2 4>;
+            layers = <0 1 2 3 4>;
+            bindings = <&to COLEMAK>;
         };
 
 	combo_esc {
 		timeout-ms = <50>;
 		key-positions = <30 10>;
-		layers = <0 1 2 3>;
+		layers = <0 1 2 3 4>;
 		bindings = <&kp ESC>;
 	};
 
         combo_tab {
             timeout-ms = <50>;
             key-positions = <30 12>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2 3 4>;
             bindings = <&kp TAB>;
         };
 
         combo_stab {
             timeout-ms = <50>;
             key-positions = <30 12 13>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2 3 4>;
             bindings = <&kp LS(TAB)>;
         };
 
