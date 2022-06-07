@@ -115,8 +115,8 @@
 		SYMBOLS {
 		bindings = <
 		&kp N1        &kp N2         &kp N3       &kp N4         &kp N5  	&kp N6    &kp N7           &kp N8         &kp N9        &kp N0 
-		&mt LALT ESC  &mt LCTRL BSPC &mt LGUI TAB &mt LSHIFT DEL &kp DEL        &kp BSPC  &mt RSHIFT MINUS &mt RGUI EQUAL &mt RCTRL DEL &mt RALT SEMI
-		&lt NAV GRAVE &kp BSLH       &kp PIPE     &kp UNDER      &kp TILDE    	&none 	  &kp PLUS         &kp LBKT       &kp RBKT      &trans
+		&mt LALT ESC  &mt LCTRL BSPC &mt LGUI TAB &mt LSHIFT DEL &kp DEL        &kp BSPC  &mt RSHIFT MINUS &mt RGUI PLUS  &mt RCTRL DEL &mt RALT SEMI
+		&lt NAV GRAVE &kp BSLH       &kp PIPE     &kp UNDER      &kp TILDE    	&none 	  &kp EQUAL        &kp LBKT       &kp RBKT      &trans
 					                  &none          &trans  	&kp TAB   &trans 
 		>;
 		};	
