@@ -14,6 +14,7 @@
 #define SYMBOLS  3
 #define NAV      4
 #define STENO    5
+#define MICS     6
 
 &mt {
    // flavor = "tap-preferred";
@@ -88,7 +89,7 @@
 
         combo_btclr {
             timeout-ms = <50>;
-            key-positions = <0 5 6>;
+            key-positions = <20 16 17>;
             bindings = <&bt BT_CLR>;
         };
     };
@@ -100,7 +101,7 @@
 		bindings = <
 		&lt NAV Q  &kp W       &kp E      &kp R        &kp T 			&kp Y   &kp U        &kp I      &kp O       &kp P 
 		&hm LALT A &hm LCTRL S &hm LGUI D &hm LSHIFT F &kp G 	               	&kp H   &hm RSHIFT J &hm RGUI K &hm RCTRL L &hm RALT QUOT
-		&lt NAV Z  &kp X       &kp C      &kp V        &kp B		       	&kp N   &kp M        &kp CMMA   &kp DOT     &lt NAV SLASH
+		&lt MISC Z &kp X       &kp C      &kp V        &kp B		       	&kp N   &kp M        &kp CMMA   &kp DOT     &lt NAV SLASH
           				          &sl SYMBOLS  &lt SYMBOLS RET          &kp RET &kp SPACE 
 		>;
 		};
@@ -109,7 +110,7 @@
 		bindings = <
 		&lt NAV Q  &kp W       &kp F      &kp P        &kp B 			&kp J   &kp L        &kp U      &kp Y       &kp QUOT 
 		&hm LALT A &hm LCTRL R &hm LGUI S &hm LSHIFT T &kp G 	               	&kp M   &hm RSHIFT N &hm RGUI E &hm RCTRL I &hm RALT O
-		&lt NAV Z  &kp X       &kp C      &kp D        &kp V		       	&kp K   &kp H        &kp CMMA   &kp DOT     &lt NAV SLASH
+		&lt MISC Z &kp X       &kp C      &kp D        &kp V		       	&kp K   &kp H        &kp CMMA   &kp DOT     &lt NAV SLASH
           				          &trans       &trans			&trans  &trans 
 		>;
 		};
@@ -118,25 +119,25 @@
 		bindings = <
 		&lt NAV Q  &hm LCTRL W &kp E &hm LSHIFT R &kp T		                &kp Y   &kp U &kp I    &kp O   &kp P 
 		&hm LALT A &kp S       &kp D &kp F        &kp G 	                &kp H   &kp J &kp K    &kp L   &kp QUOT 
-		&lt NAV Z  &kp X       &kp C &kp V        &kp B 	                &kp N   &kp M &kp CMMA &kp DOT &trans 
+		&lt MISC Z &kp X       &kp C &kp V        &kp B 	                &kp N   &kp M &kp CMMA &kp DOT &trans 
 					     &kp SPACE    &trans  		        &trans  &trans 
 		>;
 		};
 		
 		SYMBOLS {
 		bindings = <
-		&kp N1        &kp N2         &kp N3       &kp N4         &kp N5  	&kp N6    &kp N7           &kp N8         &kp N9        &kp N0 
-		&hm LALT ESC  &hm LCTRL BSPC &hm LGUI TAB &hm LSHIFT DEL &kp DEL        &kp BSPC  &hm RSHIFT MINUS &hm RGUI PLUS  &hm RCTRL DEL &hm RALT SEMI
-		&lt NAV GRAVE &kp BSLH       &kp PIPE     &kp UNDER      &kp TILDE    	&none 	  &kp EQUAL        &kp LBKT       &kp RBKT      &trans
-					                  &none          &trans  	&kp TAB   &trans 
+		&kp N1         &kp N2         &kp N3       &kp N4         &kp N5  	&kp N6    &kp N7           &kp N8         &kp N9        &kp N0 
+		&hm LALT ESC   &hm LCTRL BSPC &hm LGUI TAB &hm LSHIFT DEL &kp DEL       &kp BSPC  &hm RSHIFT MINUS &hm RGUI PLUS  &hm RCTRL DEL &hm RALT SEMI
+		&lt MISC GRAVE &kp BSLH       &kp PIPE     &kp UNDER      &kp TILDE    	&none 	  &kp EQUAL        &kp LBKT       &kp RBKT      &trans
+			 		                   &none          &trans  	&kp TAB   &trans 
 		>;
 		};	
 		
 		NAV {
 		bindings = <
-		&none    &kp C_VOL_DN &kp UP     &kp C_VOL_UP &kp F5 			&bt BT_PRV   &bt BT_NXT &kp HOME     &kp END      &kp PG_UP
+		&none    &kp C_VOL_DN &kp UP     &kp C_VOL_UP &none 			&none        &none      &kp HOME     &kp END      &kp PG_UP
 		&kp LALT &kp LEFT     &kp DOWN   &kp RIGHT    &kp LC(LA(LS(N4)))	&kp LEFT     &kp DOWN   &kp UP       &kp RIGHT    &kp PG_DN 
-		&none    &kp F1       &kp F2     &kp F3       &kp F4		 	&bt BT_SEL 0 &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &none   
+		&none    &none        &none      &none        &none		 	&none        &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &none   
 					         &kp SPACE    &kp TAB  			&kp TAB      &trans 
 		>;
 		};	
@@ -147,6 +148,15 @@
 		&kp Q  &kp W  &kp E  &kp R  &kp T     			                &kp U  &kp I  &kp O  &kp P    &kp LBKT 
 		&kp A  &kp S  &kp D  &kp F  &kp G    			                &kp J  &kp K  &kp L  &kp SEMI &kp QUOT 
 			   	     &kp C  &kp V    					&kp N  &kp M 
+		>;
+		};
+
+       		MISC {
+		bindings = <
+		&kp F1       &kp F2 	  &kp F3       &kp F4	    &kp F5	  	&kp F6  &kp F7     &kp F8     &kp F9   &kp F10
+		&bt BT_SEL 0 &bt BL_SEL 1 &bt BL_SEL 2 &bt BL_SEL 4 &bt BL_SEL 5        &none   &bt BL_PRV &bt BL_NXT &kp F11  &kp F12 
+		&none        &none        &none        &none        &none    	        &none   &none      &none      &none    &none 
+			   	    		       &kp SPACE    &kp TAB 		&kp TAB &trans 
 		>;
 		};
         
