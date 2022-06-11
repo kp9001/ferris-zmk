@@ -134,9 +134,9 @@
 		
 		NAV {
 		bindings = <
-		&none    &kp K_VOL_DN &kp UP     &kp K_VOL_UP &kp F5 			&bt BT_PRV   &bt BT_NXT &kp HOME     &kp END      &kp PG_UP
-		&kp LALT &kp LEFT     &kp DOWN   &kp RIGHT    &kp LC(LA(LS(4)))		&kp LEFT     &kp DOWN   &kp UP       &kp RIGHT    &kp PG_DN 
-		&none    &kp F1       &kp F2     &kp F3       &kp F4		 	&bt BT_SEL 0 &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &none   
+		&none    &kp C_VOL_DN &kp UP     &kp C_VOL_UP &kp F5 			&bt BT_PRV   &bt BT_NXT &kp HOME     &kp END      &kp PG_UP
+		&kp LALT &kp LEFT     &kp DOWN   &kp RIGHT    &kp LC(LA(LS(N4)))	&kp LEFT     &kp DOWN   &kp UP       &kp RIGHT    &kp PG_DN 
+		&none    &kp F1       &kp F2     &kp F3       &kp F4		 	&bt BT_SEL 0 &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &none   
 					         &kp SPACE    &kp TAB  			&kp TAB      &trans 
 		>;
 		};	
