@@ -14,7 +14,7 @@
 #define SYMBOLS  3
 #define NAV      4
 #define STENO    5
-#define MICS     6
+#define MISC     6
 
 &mt {
    // flavor = "tap-preferred";
