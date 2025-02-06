@@ -38,12 +38,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_steno {
-            timeout-ms = <50>;
-            key-positions = <0 4>;
-            bindings = <&tog STENO>;
-        };
-
         combo_qwerty {
             timeout-ms = <50>;
             key-positions = <0 1 2 4>;
@@ -141,15 +135,6 @@
 					         &kp SPACE    &kp TAB  			&kp TAB      &trans 
 		>;
 		};	
-
-       		STENO {
-		bindings = <
-		&kp N1 &kp N1 &kp N1 &kp N1 &kp N1  			  		&kp N1 &kp N1 &kp N1 &kp N1   &kp N1 
-		&kp Q  &kp W  &kp E  &kp R  &kp T     			                &kp U  &kp I  &kp O  &kp P    &kp LBKT 
-		&kp A  &kp S  &kp D  &kp F  &kp G    			                &kp J  &kp K  &kp L  &kp SEMI &kp QUOT 
-			   	     &kp C  &kp V    					&kp N  &kp M 
-		>;
-		};
 
        		MISC {
 		bindings = <
