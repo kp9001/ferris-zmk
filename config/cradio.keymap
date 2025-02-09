@@ -84,17 +84,17 @@
             key-positions = <20 5 6>;
             bindings = <&bt BT_CLR>;
         };
-
-        combo_resetleft {
+	
+        combo_reset {
             timeout-ms = <50>;
-            key-positions = <20 22 24>;
+            key-positions = <10 11 13 14 15 16 18 19>;
             bindings = <&sys_reset>;
         };
 
-        combo_resetright {
+        combo_bootloader {
             timeout-ms = <50>;
-            key-positions = <25 27 29>;
-            bindings = <&sys_reset>;
+            key-positions = <20 21 23 24 25 26 28 29>;
+            bindings = <&bootloader>;
         };
 
     };
@@ -141,7 +141,7 @@
 		NAV {
 		bindings = <
 		&none    &kp C_VOL_DN &kp UP     &kp C_VOL_UP &none 			&none        &none      &kp HOME     &kp END      &kp PG_UP
-		&kp LALT &kp LEFT     &kp DOWN   &kp RIGHT    &kp LC(LG(LS(N4)))	&kp LEFT     &kp DOWN   &kp UP       &kp RIGHT    &kp PG_DN 
+		&kp LALT &kp LEFT     &kp DOWN   &kp RIGHT    &kp PRINTSCREEN	 	&kp LEFT     &kp DOWN   &kp UP       &kp RIGHT    &kp PG_DN 
 		&none    &none        &none      &none        &none		 	&none        &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &none   
 					         &kp SPACE    &kp TAB  			&kp TAB      &trans 
 		>;
@@ -151,7 +151,7 @@
 		bindings = <
 		&kp F1       &kp F2 	  &kp F3       &kp F4	    &kp F5	  	&bt BT_PRV   &bt BT_NXT   &kp HOME     &kp END      &kp PG_UP
 		&kp F6       &kp F7 	  &kp F8       &kp F9	    &kp F10             &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &kp PG_DN 
-		&none        &none        &none        &none        &none               &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
+		&kp F11      &kp F12      &none        &none        &none               &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
 			   	    		       &kp SPACE    &kp TAB 		&kp TAB  &trans 
 		>;
 		};
