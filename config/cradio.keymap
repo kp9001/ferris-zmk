@@ -85,15 +85,27 @@
             bindings = <&bt BT_CLR>;
         };
 	
-        combo_reset {
+        combo_resetleft {
             timeout-ms = <50>;
-            key-positions = <10 11 13 14 15 16 18 19>;
+            key-positions = <30 10 11 13 14>;
+            bindings = <&sys_reset>;
+        };
+	
+        combo_resetright {
+            timeout-ms = <50>;
+            key-positions = <33 15 16 18 19>;
             bindings = <&sys_reset>;
         };
 
-        combo_bootloader {
+        combo_bootloaderleft {
             timeout-ms = <50>;
-            key-positions = <20 21 23 24 25 26 28 29>;
+            key-positions = <30 20 21 23 24>;
+            bindings = <&sys_reset>;
+        };
+
+        combo_bootloaderright {
+            timeout-ms = <50>;
+            key-positions = <33 25 26 28 29>;
             bindings = <&bootloader>;
         };
 
