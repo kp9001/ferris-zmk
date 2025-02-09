@@ -128,10 +128,10 @@
 		
 		NAV {
 		bindings = <
-		&none    &kp C_VOL_DN &kp UP     &kp C_VOL_UP &none 			&none        &none      &kp HOME     &kp END      &kp PG_UP
-		&kp LALT &kp LEFT     &kp DOWN   &kp RIGHT    &kp PRINTSCREEN	 	&kp LEFT     &kp DOWN   &kp UP       &kp RIGHT    &kp PG_DN 
-		&none    &none        &none      &none        &none		 	&none        &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &none   
-					         &kp SPACE    &kp TAB  			&kp TAB      &trans 
+		&none   	&kp C_VOL_DN &kp UP     &kp C_VOL_UP &none 			&none        &none      &kp HOME     &kp END      &kp PG_UP
+		&kp LALT	&kp LEFT     &kp DOWN   &kp RIGHT    &kp PRINTSCREEN	 	&kp LEFT     &kp DOWN   &kp UP       &kp RIGHT    &kp PG_DN 
+		&bootloader     &none        &none      &none        &sys_reset		 	&sys_reset   &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &bootloader 
+					         	&kp SPACE    &kp TAB  			&kp TAB      &trans 
 		>;
 		};	
 
