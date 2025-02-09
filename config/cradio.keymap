@@ -102,16 +102,16 @@
 		&lt NAV Q  &kp W       &kp F      &kp P        &kp B 			&kp J   &kp L        &kp U      &kp Y       &lt NAV QUOT 
 		&hm LALT A &hm LCTRL R &hm LGUI S &hm LSHIFT T &kp G 	               	&kp M   &hm RSHIFT N &hm RGUI E &hm RCTRL I &hm RALT O
 		&lt MISC Z &kp X       &kp C      &kp D        &kp V		       	&kp K   &kp H        &kp CMMA   &kp DOT     &lt MISC SLASH
-          				          &trans       &trans			&trans  &trans 
+          				          &sl SYMBOLS  &lt SYMBOLS RET          &kp RET &kp SPACE 
 		>;
 		};
 
        		GAME {
 		bindings = <
-		&lt NAV Q  &hm LCTRL W &kp E &hm LSHIFT R &kp T		                &kp Y   &kp U &kp I    &kp O   &kp P 
+		&lt NAV Q  &hm LCTRL W &kp E &hm LSHIFT R &kp T		                &kp Y   &kp U &kp I    &kp O   &lt NAV P 
 		&hm LALT A &kp S       &kp D &kp F        &kp G 	                &kp H   &kp J &kp K    &kp L   &kp QUOT 
-		&lt MISC Z &kp X       &kp C &kp V        &kp B 	                &kp N   &kp M &kp CMMA &kp DOT &trans 
-					     &kp SPACE    &trans  		        &trans  &trans 
+		&lt MISC Z &kp X       &kp C &kp V        &kp B 	                &kp N   &kp M &kp CMMA &kp DOT &lt MISC SLASH 
+					     &kp SPACE    &lt SYMBOLS RET	        &kp RET &kp SPACE 
 		>;
 		};
 		
