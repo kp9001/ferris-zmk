@@ -18,10 +18,6 @@ The placement of delete and backspace are based on esdf (game) and hjkl (vim) mo
 
 All other keys are fit into the misc layer, e.g. the funnction keys. BT_SEL keys are also found on this layer, but are largely useless due to the bluetoooth device limitation outlined below. They do, however, serve a natural use if the bluetooth connnection limit is raised. 
 
-## Security Hardening
-
-This firmware sets certain hardening configs based on [Zephyr Documentation](https://docs.zephyrproject.org/latest/security/index.html). It also sets certain [experimental bluetooth security features](https://zmk.dev/docs/config/bluetooth) in ZMK, such as enforcing passkey entry for bluetooth pairing. 
-
 ## Bluetooth
 
 By default, ZMK allows 5 bluetooth connections. This config effectively limits that number to 1. Pairing a new device will require clearing a previously paired device, which can be achieved using the BT_CLR combo key. 
@@ -39,3 +35,7 @@ On the other hand, bluetooth functionality can be effectively disabled by settin
 CONFIG_BT_MAX_CONN=2
 CONFIG_BT_MAX_PAIRED=1
 ```
+
+## Security Hardening
+
+This firmware sets certain hardening configs based on [Zephyr Documentation](https://docs.zephyrproject.org/latest/security/index.html). It also sets certain [experimental bluetooth security features](https://zmk.dev/docs/config/bluetooth) in ZMK, such as enforcing passkey entry for bluetooth pairing. 
